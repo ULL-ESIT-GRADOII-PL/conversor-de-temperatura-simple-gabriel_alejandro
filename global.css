@@ -13,17 +13,31 @@ input       {
               font-size:large;       }
 body
 {
- background-color:#b0c4de;  /* blue */
+ background-color: #5F8BC0;  /* blue */
  font-size:large;
  font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
 }
 
-h1 {
-    font-weight: normal;
-    font-family: "Brush Script MT", cursive;
-    background: #3C5681;
-    padding: 5px 15px;
-    color: white;
-    display:inline-block;
-    border-radius: 10px 10px 10px 10px;
+.main{
+    background-color: #4C67A4;
+}
+/*Para todos los hijos de tipo H1 de los div de clase main*/
+.main > h1{
+    display: inline-block;
+    background-color: inherit;
+    color: #B4D9F5;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    padding-left: 80px;
+    font-size: 72px;
+    font-weight: 500;
+}
+/*Para todos los hijos de tipo img de los div de clase main*/
+.main > img {
+    display: inline-block;
+    background-color: inherit;
+    width: 150px;
+    height: 150px;
+    float: right;
+    padding: 30px 70px;
 }

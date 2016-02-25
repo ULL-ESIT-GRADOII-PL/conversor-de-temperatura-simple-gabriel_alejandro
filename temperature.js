@@ -2,25 +2,38 @@
 function calculate() {
   var result;
   var temp = original.value;
-  var regexp = /([-+]?\d+(?:\.\d*)?)\s*([fFcC])/;
-  
+  var regexp = /([-+]?\d+(?:\.\d*)?)\s*((?:e[-]?\d+)?)\s*(ce?l?s?i?u?s?|fa?h?r?e?n?h?e?i?t?)$/ig;
   var m = temp.match(regexp);
-  
   if (m) {
     var num = m[1];
-    var type = m[2];
+    var exp = m[2];
+    var type = m[3].toLowerCase();
     num = parseFloat(num);
-    if (type == 'c' || type == 'C') {
-      result = (num * 9/5)+32;
-      result = result.toFixed(1)+" Farenheit"
+    exp = exp.replace('e','');
+    exp = parseInt(exp);
+    if(isNaN(exp))
+      exp = 1;
+    if (type == 'c' || type == 'ce' ||
+        type == 'cel' || type == 'cels'||
+        type == 'celsi' || type == 'celsiu' ||
+        type == 'celsius') {
+            result = (Math.pow(num,exp) * 9 / 5) + 32;
+            result = result.toFixed(1) + " Fharenheit"
+            converted.innerHTML = result;op
     }
     else {
-      result = (num - 32)*5/9;
-      result = result.toFixed(1)+" Celsius"
+      if (type == 'f' ||  type == 'fa'|| type == 'fah' ||
+        type == 'fahr' || type == 'fahre'|| type == 'fahren' ||
+        type == 'fahrenh' || type == 'fahrenhe' ||  type == 'fahrenhei' ||
+        type == 'fahrenheit') {
+            result = (Math.pow(num,exp) - 32) * 5 / 9;
+            result = result.toFixed(1) + " Celsius"
+            converted.innerHTML = result;
+        }
+        else
+          converted.innerHTML = "ERROR! Try something like '-4.2C' instead";
     }
-    converted.innerHTML = result;
   }
-  else {
+  else
     converted.innerHTML = "ERROR! Try something like '-4.2C' instead";
-  }
 }

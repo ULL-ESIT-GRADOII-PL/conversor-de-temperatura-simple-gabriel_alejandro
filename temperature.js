@@ -2,7 +2,7 @@
 function calculate() {
   var result;
   var temp = original.value;
-  var regexp = /([-+]?\d+(?:\.\d*)?)\s*((?:e[-]?\d+)?)\s*(ce?l?s?i?u?s?||fa?h?r?e?n?h?e?i?t?)$/i;
+  var regexp = /([-+]?\d+(?:\.\d*)?)\s*((?:e[-]?\d+)?)\s*(ce?l?s?i?u?s?|fa?h?r?e?n?h?e?i?t?)$/ig;
   var m = temp.match(regexp);
   if (m) {
     var num = m[1];
@@ -19,7 +19,7 @@ function calculate() {
         type == 'celsius') {
             result = (Math.pow(num,exp) * 9 / 5) + 32;
             result = result.toFixed(1) + " Fharenheit"
-            converted.innerHTML = result;
+            converted.innerHTML = result;op
     }
     else {
       if (type == 'f' ||  type == 'fa'|| type == 'fah' ||
@@ -30,9 +30,10 @@ function calculate() {
             result = result.toFixed(1) + " Celsius"
             converted.innerHTML = result;
         }
-        else {
+        else
           converted.innerHTML = "ERROR! Try something like '-4.2C' instead";
-        }
     }
   }
+  else
+    converted.innerHTML = "ERROR! Try something like '-4.2C' instead";
 }

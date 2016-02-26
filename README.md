@@ -25,9 +25,9 @@
 
 ###Paginas de Usuarios.
 
-* [Alejandro Marrero](http://marrero-github.io/﻿)
+* [Alejandro Marrero](https://marrero-.github.io/﻿)
 
-* [Gabriel Melián](alu0100819786.github.io)
+* [Gabriel Melián](https://alu0100819786.github.io)
 
 ### Despliegue en github.io
 

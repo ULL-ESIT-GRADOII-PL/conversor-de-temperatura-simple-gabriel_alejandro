@@ -2,6 +2,9 @@
 <html>
   <head>
      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+     <link href='https://fonts.googleapis.com/css?family=Pacifico'
+           rel='stylesheet' type='text/css'>
      <title>JavaScript Temperature Converter</title>
      <link href="normalize.css" rel="stylesheet" type="text/css">
      <link href="global.css" rel="stylesheet" type="text/css">
@@ -9,16 +12,22 @@
      <script type="text/javascript" src="temperature.js"></script>
   </head>
   <body>
-    <h1>Temperature Converter</h1>
-    <table>
-      <tr>
-        <th>Enter  Temperature (examples: 32F, 45C, -2.5f):</th>
-        <td><input id="original" autofocus onchange="calculate();" placeholder="32F" size="50"></td>
-      </tr>
-      <tr>
-        <th>Converted Temperature:</th>
-        <td><span class="output" id="converted"></span></td>
-      </tr>
-    </table>
+    <div class="divHead">
+      <h1>Temperature Converter</h1>
+      <img src="img/thermometer.png" alt="">
+        <a href="https://github.com/ULL-ESIT-GRADOII-PL/conversor-de-temperatura-simple-gabriel_alejandro.git"><img id ="git" src="img/git.png" alt=""></a>
+      <hr>
+    </div>
+    <div class="main">
+      <h3>Enter Temperature</h3>
+      <input id="original" autofocus onchange="calculate();"
+      placeholder="32F" size="60">
+      <span class="output" id="converted"></span>
+    </div>
+    <div class="footer">
+      Desarrolladores <br>
+      <a href="https://github.com/marrero-">Alejandro Marrero Díaz</a>
+      <a href="https://github.com/alu0100819786">Gabriel Melian Hernández</a>
+    </div>
   </body>
 </html>

@@ -9,13 +9,26 @@
 * Expresiones Regulares
 * Un poquito de CSS
 * Uso de Emmet (instale el plugin para su editor)
-* Uso de Mocha y Chai 
+* Uso de Mocha y Chai
 * Uso de Gulp
+
+
+### Enlaces de Interés.
+
+###Acceso a la PAgina de la Asignatura en el Campus Virtual.
+
+* [Página Web de La Asignatura](https://campusvirtual.ull.es/1516/course/view.php?id=178)
+
+###Repo en el que se trabajó la Practica.
+
+* [Repositorio de Trabajo](https://github.com/marrero-/conversor-de-temperatura-simple-gabriel_alejandro)
+
+###Paginas de Usuarios.
+
+* [Alejandro Marrero](http://marrero-github.io/﻿)
+
+* [Gabriel Melián](alu0100819786.github.io)
 
 ### Despliegue en github.io
 
-* [http://crguezl.github.io/ull-etsii-grado-pl-1213-temperature-converter/](http://crguezl.github.io/ull-etsii-grado-pl-1213-temperature-converter/)
-
-### Ejecutar las pruebas
-
-* [http://crguezl.github.io/ull-etsii-grado-pl-1213-temperature-converter/tests/index.html](http://crguezl.github.io/ull-etsii-grado-pl-1213-temperature-converter/tests/index.html)
+* [Conversor de Temperatura](http://ull-esit-gradoii-pl.github.io/conversor-de-temperatura-simple-gabriel_alejandro/)
